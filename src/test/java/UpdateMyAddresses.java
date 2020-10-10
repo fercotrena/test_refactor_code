@@ -56,7 +56,7 @@ public class UpdateMyAddresses {
 
         driver.findElement(By.cssSelector("#submitAddress > span")).click();
 
-        /*Se valida el cambio realizado  comparando el valor del alias actualizado*/
+        /*Se valida el cambio realizado. Se compara el valor del alias actualizado*/
         assertEquals("UTN AUTOMATION", driver.findElement(By.cssSelector(".page-subheading")).getText());
     }
 
