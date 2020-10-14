@@ -8,10 +8,10 @@ import java.util.concurrent.TimeUnit;
 
 public class WebDriverSupliter {
 
-    private static WebDriver driver;
+    public static WebDriver driver;
 
     public static WebDriver getChromeDriver() {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
         if (driver == null) {
             driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
